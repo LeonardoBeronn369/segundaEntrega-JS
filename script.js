@@ -65,6 +65,7 @@ function agregarFuncion() {
     })
 }
 
+
 function agregarAlCarrito(prod) {
     let existe = carrito.some((productoSome) => productoSome.id === prod.id);
     if (existe === false) {
@@ -77,8 +78,9 @@ function agregarAlCarrito(prod) {
     
     console.log(carrito);
     generarCarrito();
-    
 }
+
+
 
 function generarCarrito(){
     carritoDiv.innerHTML = "";
@@ -110,3 +112,11 @@ function borrarProducto() {
 crearCards();
 generarCarrito()
 
+
+//destructuracion
+const [prenda1, prenda2, prenda3, prenda4, prenda5, prenda6] = productos;
+//console.log(prenda3, prenda5);
+
+//spread operation
+const [producto1, producto2, ...restoDePrendas] = productos;
+//console.log(producto1, producto2, ...restoDePrendas)
