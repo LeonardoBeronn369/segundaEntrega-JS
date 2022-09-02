@@ -239,3 +239,7 @@ button:hover{
     background-color: #457b9d;
 }
 
+.textAlert{
+  color: #ff006e;
+  font-family: 'Dancing Script', cursive;
+}

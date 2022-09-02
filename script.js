@@ -61,6 +61,15 @@ function agregarFuncion() {
         .addEventListener("click", () => {
             console.log(prod);
             agregarAlCarrito(prod);
+
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Se agrego al Carrito',
+                showConfirmButton: false,
+                timer: 900,
+                toast: true
+              })
         })
     })
 }
@@ -91,6 +100,7 @@ function generarCarrito(){
         <button id="btn-borrar${prod.id}">Borrar</button>
         </div>`;
     });
+    
     localStorage.setItem("carrito", JSON.stringify(carrito));
     borrarProducto();
 } 
