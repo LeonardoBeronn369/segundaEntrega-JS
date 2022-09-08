@@ -146,13 +146,13 @@ function obtenerDatos(){
         .then( resultado => mostrarHTML(resultado))
 }
 
-function mostrarHTML(empleados) {
+function mostrarHTML(colecciones) {
     const contenido = document.querySelector('.contenido');
 
     let html = '';
 
-    empleados.forEach(empleado => {
-        const {id, nombre, producto, imagen} = empleado;
+    colecciones.forEach(coleccion => {
+        const {id, nombre, producto, imagen} = coleccion;
 
         html += `
         <div class="nuevosProd">
