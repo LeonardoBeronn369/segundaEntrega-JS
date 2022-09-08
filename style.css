@@ -183,12 +183,11 @@
       text-align: center;
     }
   }
-/*
+
 .container{
-    display: flex;
-    flex-wrap: wrap;
-   gap: 2rem;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 .tarjeta{
     width: 200px;
@@ -242,4 +241,26 @@ button:hover{
 .textAlert{
   color: #ff006e;
   font-family: 'Dancing Script', cursive;
+}
+
+.tituloProx{
+  text-align: center;
+  margin-top: 4rem;
+} 
+
+.nuevosProd{
+  background-color: #bde0fe;
+  margin: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+.contenido{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgProx{
+  width: 100%;
+   height: auto;
 }

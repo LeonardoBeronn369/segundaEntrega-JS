@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "Cartera Azul",
+        "producto" : "Cartera",
+        "imagen" : "./img/cartera1.jpg" 
+    },
+    {
+        "id" : 2,
+        "nombre" : "Mochila Amarilla",
+        "producto" : "Cartera",
+        "imagen" : "./img/cartera2.jpg"
+    },
+    {
+        "id" : 3,
+        "nombre" : "Cartera Naranja",
+        "producto" : "Cartera",
+        "imagen" : "./img/cartera3.jpg"
+    }
+]

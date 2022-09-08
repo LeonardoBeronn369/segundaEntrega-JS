@@ -130,3 +130,38 @@ const [prenda1, prenda2, prenda3, prenda4, prenda5, prenda6] = productos;
 //spread operation
 const [producto1, producto2, ...restoDePrendas] = productos;
 //console.log(producto1, producto2, ...restoDePrendas)
+
+
+
+
+// ----------- FETCH ---------
+
+document.addEventListener('DOMContentLoaded', obtenerDatos);
+
+function obtenerDatos(){
+    const url = './productos.json';
+
+    fetch(url)
+        .then( respuesta => respuesta.json())
+        .then( resultado => mostrarHTML(resultado))
+}
+
+function mostrarHTML(empleados) {
+    const contenido = document.querySelector('.contenido');
+
+    let html = '';
+
+    empleados.forEach(empleado => {
+        const {id, nombre, producto, imagen} = empleado;
+
+        html += `
+        <div class="nuevosProd">
+        <img class="imgProx" id="${id}" src="${imagen} " alt="">
+        <p class="prodNombre">${nombre} </p>
+        <p>producto: ${producto} </p>
+        </div>
+        `;
+    });
+    contenido.innerHTML = html;
+}
+
